@@ -23,18 +23,21 @@ struct OrderCellView: View {
                     .accessibilityIdentifier("orderNameText")
                     .font(.title2)
                     .fontWeight(.bold)
+                    .allowsHitTesting(false)
                 
                 Text("\(order.coffeeName) (\(order.size.rawValue))")
                     .accessibilityIdentifier("coffeeNameAndSizeText")
                     .font(.caption)
                     .opacity(0.5)
                     .multilineTextAlignment(.leading)
+                    .allowsHitTesting(false)
             }//: VSTACK
 
             Spacer()
             
             Text(order.total as NSNumber, formatter: NumberFormatter.currency)
                 .accessibilityIdentifier("coffeePriceText")
+                .allowsHitTesting(false)
             
          
         }//: HSTACK

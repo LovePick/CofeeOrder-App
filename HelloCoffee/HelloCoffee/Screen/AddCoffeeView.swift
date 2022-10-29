@@ -15,6 +15,7 @@ struct AddCoffeeErrors {
 
 struct AddCoffeeView: View {
     // MARK: - PROPERTY
+    var order: Order? = nil
     @State private var name: String = ""
     @State private var coffeeName: String = ""
     @State private var price: String = ""
@@ -50,18 +51,51 @@ struct AddCoffeeView: View {
     }
     
     
-    private func placeOrder() async {
-        let order = Order(name: name, coffeeName: coffeeName, total: Double(price) ?? 0, size: coffeeSize)
+    private func placeOrder(_ order:Order) async {
+        
         
         do {
             try await model.placeOrder(order)
-            
-            //dismiss
-            dismiss()
         } catch {
             print(error)
         }
         
+    }
+    
+    private func updateOrder(_ order:Order) async {
+        do {
+            try await model.updateOrder(order)
+        } catch {
+            print(error)
+        }
+    }
+    
+    private func saveOrUpdate() async {
+        if let order {
+            var editOrder = order
+            editOrder.name = name
+            editOrder.coffeeName = coffeeName
+            editOrder.total = Double(price) ?? 0.0
+            editOrder.size = coffeeSize
+            
+            await updateOrder(editOrder)
+        } else {
+            let order = Order(name: name, coffeeName: coffeeName, total: Double(price) ?? 0, size: coffeeSize)
+            await placeOrder(order)
+        }
+        
+        //dismiss
+        dismiss()
+    }
+    
+    
+    private func populateExistingOrder() {
+        if let order = order {
+            name = order.name
+            coffeeName = order.coffeeName
+            price = String(order.total)
+            coffeeSize = order.size
+        }
     }
     
     // MARK: - BODY
@@ -102,12 +136,12 @@ struct AddCoffeeView: View {
                 }//: PICKER
                 .pickerStyle(.segmented)
                 
-                Button("Place Order") {
+                Button(order != nil ? "Update Order" : "Place Order") {
                     
                     if isValid {
                         // place the order
                         Task {
-                            await placeOrder()
+                            await saveOrUpdate()
                         }
                     }
                     
@@ -116,7 +150,10 @@ struct AddCoffeeView: View {
                 .centerHorizontally()
                 
             }//: FORM
-            .navigationTitle("Add Coffee")
+            .navigationTitle(order != nil ? "Update Order" : "Add Order")
+            .onAppear(){
+                populateExistingOrder()
+            }
             
         }//: NAVIGATION
         

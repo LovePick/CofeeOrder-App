@@ -21,6 +21,17 @@ struct ContentView: View {
         }
     }
     
+    private func deleteOrder(_ order: Order) {
+        
+        Task {
+            do {
+                try await model.deleteOrder(order.id)
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
     // MARK: - BODY
     var body: some View {
         NavigationStack {
@@ -31,12 +42,33 @@ struct ContentView: View {
                         .accessibilityIdentifier("noOrdersText")
                 }else{
                     
-                    List(model.orders){ order in
-                        OrderCellView(order: order)
+                    List{
+                        ForEach(model.orders) { order in
+                            NavigationLink(value: order.id) {
+                                OrderCellView(order: order)
+                                    .swipeActions(edge: .trailing) {
+                                        Button {
+                                            deleteOrder(order)
+                                        } label: {
+                                            Label("Delete", systemImage:"trash")
+                                        }
+                                        .accessibilityIdentifier("DeleteOrder")
+                                        .tint(.red)
+                                        
+                                    }//: SWIPE ACTION
+                            }
+                        }//: LOOP
+                        
+                        
                     }//: LIST
+                    .accessibilityIdentifier("orderList")
+                    
                 }
                 
             }//: VSTACK
+            .navigationDestination(for: String.self, destination: { orderId in
+                OrderDetailView(orderId: orderId)
+            })
             .task {
                 // **1. CALL THIS FIRST
                 await populateOrders()

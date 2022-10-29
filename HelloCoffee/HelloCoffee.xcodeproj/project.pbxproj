@@ -21,6 +21,7 @@
 		C1BF81842909017B004CC9F8 /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF81832909017B004CC9F8 /* NumberFormatter+Extensions.swift */; };
 		C1BF8187290904E0004CC9F8 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF8186290904E0004CC9F8 /* AppEnvironment.swift */; };
 		C1BF818F29091545004CC9F8 /* HelloCoffeeE2ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BF818E29091545004CC9F8 /* HelloCoffeeE2ETests.swift */; };
+		C1CC430E290D25520034421C /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CC430D290D25520034421C /* OrderDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C1BF8186290904E0004CC9F8 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		C1BF818C29091545004CC9F8 /* HelloCoffeeE2ETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCoffeeE2ETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1BF818E29091545004CC9F8 /* HelloCoffeeE2ETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoffeeE2ETests.swift; sourceTree = "<group>"; };
+		C1CC430D290D25520034421C /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,8 @@
 			children = (
 				C1BF81672908D8E5004CC9F8 /* HelloCoffeeApp.swift */,
 				C1BF81692908D8E5004CC9F8 /* ContentView.swift */,
+				C1CC430D290D25520034421C /* OrderDetailView.swift */,
+				C182754C290920EB00AE8D89 /* AddCoffeeView.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -143,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				C1BF81802908FAF1004CC9F8 /* OrderCellView.swift */,
-				C182754C290920EB00AE8D89 /* AddCoffeeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			files = (
 				C1BF816A2908D8E5004CC9F8 /* ContentView.swift in Sources */,
 				C1827551290927B000AE8D89 /* String+Extension.swift in Sources */,
+				C1CC430E290D25520034421C /* OrderDetailView.swift in Sources */,
 				C1BF817D2908DE84004CC9F8 /* CoffeeModel.swift in Sources */,
 				C1BF81842909017B004CC9F8 /* NumberFormatter+Extensions.swift in Sources */,
 				C1BF81682908D8E5004CC9F8 /* HelloCoffeeApp.swift in Sources */,

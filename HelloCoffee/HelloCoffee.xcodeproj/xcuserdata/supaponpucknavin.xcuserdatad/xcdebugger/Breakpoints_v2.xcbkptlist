@@ -3,4 +3,148 @@
    uuid = "C7989037-06BF-41AA-98E5-AB48A4D7CF37"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3B25C66-C1B5-4F81-A85E-4F8D0C5EB61D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloCoffee/Screen/AddCoffeeView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "saveOrUpdate()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C3B25C66-C1B5-4F81-A85E-4F8D0C5EB61D - fbf133fdd458c638"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for HelloCoffee.AddCoffeeView.saveOrUpdate() async -&gt; ()"
+                  moduleName = "HelloCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/supaponpucknavin/Documents/xcode/SwiftUI_Learn/myProject/CofeeOrderApp/CofeeOrder-App/HelloCoffee/HelloCoffee/Screen/AddCoffeeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "419">
+               </Location>
+               <Location
+                  uuid = "C3B25C66-C1B5-4F81-A85E-4F8D0C5EB61D - 22f7bad7c5863226"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for HelloCoffee.AddCoffeeView.saveOrUpdate() async -&gt; ()"
+                  moduleName = "HelloCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/supaponpucknavin/Documents/xcode/SwiftUI_Learn/myProject/CofeeOrderApp/CofeeOrder-App/HelloCoffee/HelloCoffee/Screen/AddCoffeeView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27725B67-11DB-4697-A99B-89C49D73C963"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloCoffee/Models/CoffeeModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "updateOrder(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "27725B67-11DB-4697-A99B-89C49D73C963 - 7baf78c26c47e1ea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for HelloCoffee.CoffeeModel.updateOrder(HelloCoffee.Order) async throws -&gt; ()"
+                  moduleName = "HelloCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/supaponpucknavin/Documents/xcode/SwiftUI_Learn/myProject/CofeeOrderApp/CofeeOrder-App/HelloCoffee/HelloCoffee/Models/CoffeeModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "27725B67-11DB-4697-A99B-89C49D73C963 - 82b862b3cc34e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for HelloCoffee.CoffeeModel.updateOrder(HelloCoffee.Order) async throws -&gt; ()"
+                  moduleName = "HelloCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/supaponpucknavin/Documents/xcode/SwiftUI_Learn/myProject/CofeeOrderApp/CofeeOrder-App/HelloCoffee/HelloCoffee/Models/CoffeeModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "27725B67-11DB-4697-A99B-89C49D73C963 - 5a3fc84d59b025e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for HelloCoffee.CoffeeModel.updateOrder(HelloCoffee.Order) async throws -&gt; ()"
+                  moduleName = "HelloCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/supaponpucknavin/Documents/xcode/SwiftUI_Learn/myProject/CofeeOrderApp/CofeeOrder-App/HelloCoffee/HelloCoffee/Models/CoffeeModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "171">
+               </Location>
+               <Location
+                  uuid = "27725B67-11DB-4697-A99B-89C49D73C963 - 4ac7e19520878be9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for HelloCoffee.CoffeeModel.updateOrder(HelloCoffee.Order) async throws -&gt; ()"
+                  moduleName = "HelloCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/supaponpucknavin/Documents/xcode/SwiftUI_Learn/myProject/CofeeOrderApp/CofeeOrder-App/HelloCoffee/HelloCoffee/Models/CoffeeModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "81E0655F-8943-4741-A3E2-C629AF0F77FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HelloCoffee/Models/CoffeeModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "updateOrder(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
